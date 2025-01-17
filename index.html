@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="player-inputs">
+        <div>
+          <label for="playerXName">Player X Name:</label>
+          <input type="text" id="playerXName" placeholder="Enter Player X Name" />
+        </div>
+        <div>
+          <label for="playerOName">Player O Name:</label>
+          <input type="text" id="playerOName" placeholder="Enter Player O Name" />
+        </div>
+        <button id="updateNamesBtn" class="btn">Update Names</button>
+    </div>
+    <div class="scoreboard">
+        <div class="score">
+          <h3 id="playerXLabel">Player X</h3>
+          <p>Wins: <span id="playerXWins">0</span></p>
+        </div>
+        <div class="score">
+          <h3 id="playerOLabel">Player O</h3>
+          <p>Wins: <span id="playerOWins">0</span></p>
+        </div>
+        <div class="score">
+          <h3>Draws</h3>
+          <p>Total: <span id="draws">0</span></p>
+        </div>
+    </div>
+    <div class="game-board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <div class="controls">
+      <button id="resetBtn" class="btn">Reset Game</button>
+      <button id="toggleMode" class="btn">Switch to AI Mode</button>
+    </div>
+    <div id="status" class="status"></div>
+    <div class="history-sidebar" id="historySidebar">
+        <h2>History</h2>
+        <ul id="moveHistory" class="move-history-list"></ul>
+        <button id="closeHistoryBtn" class="btn">Close</button>
+    </div>
+   
+  <button id="toggleHistoryBtn" class="btn">Show History</button>
+  <div id="status" class="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>

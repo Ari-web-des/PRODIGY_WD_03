@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    background-image: url('https://img.freepik.com/free-vector/glowing-light-effects-collection-isolated-dark-background_260559-192.jpg?ga=GA1.1.1609207044.1724568304&semt=ais_hybrid');
+    background-size: none;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 50px auto;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    width: 300px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #ccc;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .cell:hover {
+    background: #eaeaea;
+  }
+  
+  .controls {
+    margin: 20px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  .status {
+    color: red;
+    font-family: fantasy;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .score {
+    text-align: center;
+    padding: 10px;
+    background: #e0f7fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .score p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+  }
+  .player-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .player-inputs div {
+    position: middle center;
+    display: flex;
+    flex: auto;
+    margin-right: auto;
+  }
+  
+  .player-inputs input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #d6d2d2;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .player-inputs button {
+    flex:0 0 auto;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .player-inputs button:hover {
+    background-color: #0056b3;
+  }
+  .game-area {
+    display: flex;
+    position: relative;
+  }
+  
+  .history-sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden initially */
+    height: 100%;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .history-sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .move-history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .move-history-list li {
+    margin: 5px 0;
+    padding: 5px;
+    background: #e0f7fa;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .history-sidebar .btn {
+    display: block;
+    margin: 10px auto 0;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .history-sidebar .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #toggleHistoryBtn {
+    margin-top: 20px;
+  }
+  
+  .sidebar-open {
+    right: 0 ;
+  }
+
+  label[for="playerXName"] {
+    color: #c9cbcc; 
+    font-weight: bold; 
+  }
+
+  label[for="playerOName"] {
+    color: #c9cbcc; 
+    font-weight: bold; 
+  }
+      
